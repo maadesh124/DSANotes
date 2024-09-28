@@ -1,0 +1,17 @@
+auth token for repo =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  (expiry date 28 sept 2025)
+
+1.Array two Pointer best practices
+	-use while instead of for loop
+	-update(increment or decrement) only one pointer in each iteration
+	-use continue statements
+	
+2.Array when upper and lower limits of arr[i] is known(conditions like 1<=arr[i]<=N).works only for Integers
+	-you can store 2 numbers in arr[i] one should follow above condition.
+		let 'a' and 'b' be two numbers, a<=N
+		arr[i]=b*N +a;
+		when you need 'b' just perform arr[i]/N, when you need 'a' perform arr[i]%N.
+
+3.Array -bit manipuation.examples: find missing number
+	-XOR is commutative and associative
+	-a^b^c^d=d^c^a^b can be calculated in any oreder (associative property)
+	-a^a=0 ,0^a=a^0=a.
