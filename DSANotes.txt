@@ -15,3 +15,7 @@ auth token for repo =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  (expiry date 28 s
 	-XOR is commutative and associative
 	-a^b^c^d=d^c^a^b can be calculated in any oreder (associative property)
 	-a^a=0 ,0^a=a^0=a.
+	
+	
+	
+	
