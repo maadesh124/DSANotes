@@ -20,7 +20,15 @@ auth token for repo =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  (expiry date 28 s
 	
 	
 4.When you need a data structure with O(1) insertion, deletion and O(1) search operation use HashMap.
-	-Store element to be searched as key and its associated data as value
+	-Store element to be searched as key and its associated data as value 				in map,now search can be performd in O(1) ,worst case= O(n)
+	-example : 2 sum problem -return i,j such that arr[i]+arr[j]==k(given num),
+	-brute forsce:iterate through arr for each arr[i] check wheather k-arr[i] exits in arr
+	-this takes O(n^2) time complexity. 
+	-optimised oproach:store all elements of arr in map such that key=arr[i] ,value=i.
+	-now perform search in map instead of array,time complexity=O(n) ,(worst case=O(n^2),this is very very rare)
+	
+		-
+		
 
 5.Memoization in dynamic programming 
 	-first find a recursive solution to the given problem(use divide and conquer)
