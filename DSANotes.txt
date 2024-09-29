@@ -11,6 +11,7 @@ auth token for repo =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  (expiry date 28 s
 		let 'a' and 'b' be two numbers, a<=N
 		arr[i]=b*N +a;
 		when you need 'b' just perform arr[i]/N, when you need 'a' perform arr[i]%N.
+		reference="https://takeuforward.org/data-structure/count-frequency-of-each-element-in-the-array/"
 
 3.Array -bit manipuation.examples: find missing number
 	-XOR is commutative and associative
