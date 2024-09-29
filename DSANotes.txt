@@ -4,6 +4,7 @@ auth token for repo =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  (expiry date 28 s
 	-use while instead of for loop
 	-update(increment or decrement) only one pointer in each iteration
 	-use continue statements
+	-make sure that right pointer always leads left pointer
 	
 2.Array when upper and lower limits of arr[i] is known(conditions like 1<=arr[i]<=N).works only for Integers
 	-you can store 2 numbers in arr[i] one should follow above condition.
@@ -18,4 +19,12 @@ auth token for repo =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  (expiry date 28 s
 	
 	
 	
+4.When you need a data structure with O(1) insertion, deletion and O(1) search operation use HashMap.
+	-Store element to be searched as key and its associated data as value
+
+5.Memoization in dynamic programming 
+	-first find a recursive solution to the given problem(use divide and conquer)
+	-store the observation or result obtained in each iteration in a data structure
+	-use the data in this datastructure when needed
+	reference="https://youtu.be/P8Xa2BitN3I?si=smMDNaH9n7bgnYDF"
 	
