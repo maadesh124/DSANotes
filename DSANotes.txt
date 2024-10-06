@@ -36,6 +36,16 @@ auth token for repo =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  (expiry date 28 s
 	-use the data in this datastructure when needed
 	reference="https://youtu.be/P8Xa2BitN3I?si=smMDNaH9n7bgnYDF"
 	
+6.Maximum difference in O(n) 
+	-Given an Array you can find the maximum profit in O(n).
+	-This can be used with prefix sum to solve kadane's problem,maximum product subarray,etc.
+	-reference:stock buy and sell leetcode(difficulty level:easy).
+
+7.Pair search in O(n) using two pointers (array is sorted)
+	-Given a sorted array you can find all pairs such that sum of elements of pair equals target in O(n).This can also be extended to solve other problems.
+	-reference: 2 sum problem leetcode, can be extended to solve 3 sum and 4 sum problems.
+	
+	
 	
 	
 	
