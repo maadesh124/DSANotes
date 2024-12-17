@@ -45,6 +45,8 @@ auth token for repo =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  (expiry date 28 s
 	-Given a sorted array you can find all pairs such that sum of elements of pair equals target in O(n).This can also be extended to solve other problems.
 	-reference: 2 sum problem leetcode, can be extended to solve 3 sum and 4 sum problems.
 	
+8.No. of Answers with Exactly k=No. of Answers with atleast k -No. of Answers with atleast k+1 
+	-Example: No. of substrings with exactly k elements = No. of substrings with atleast k elements-No. of Substring with atleast k+1 elements(refer GFG problem -No. of substring with eactly k elements).
 	
 	
 	
