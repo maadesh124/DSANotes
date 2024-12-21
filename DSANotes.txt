@@ -48,6 +48,12 @@ auth token for repo =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  (expiry date 28 s
 8.No. of Answers with Exactly k=No. of Answers with atleast k -No. of Answers with atleast k+1 
 	-Example: No. of substrings with exactly k elements = No. of substrings with atleast k elements-No. of Substring with atleast k+1 elements(refer GFG problem -No. of substring with eactly k elements).
 	
+9.Extra pointer in Linked Lists 
+	-Sometimes an extra pointer can be used with original pointer to find the required node
+	-Example 1:middle element of Linked list can be found using slow and fast pointer, when fast pointer reaches end slow pointer is at middle node
+	-Example 2:Nth last element:when two pointers with same speed but with initial offset of N can be used to find Nth last Element.fast pointer leads slow pointer by N nodes, when fast pointer is at end,slow is at N th last element
+	-Loop problems :slow and fast pointers can be used to solve loop problems like "Length of the loop".When fast pointer leads slow pointer by N nodes then they will meet after N iterations(Speed of slow ptr is 1 Node/iteration,speed of fast is 2 node/iteration).
+	
 	
 	
 	
