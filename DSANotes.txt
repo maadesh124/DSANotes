@@ -54,7 +54,9 @@
 	-Example 2:Nth last element:when two pointers with same speed but with initial offset of N can be used to find Nth last Element.fast pointer leads slow pointer by N nodes, when fast pointer is at end,slow is at N th last element
 	-Loop problems :slow and fast pointers can be used to solve loop problems like "Length of the loop".When fast pointer leads slow pointer by N nodes then they will meet after N iterations(Speed of slow ptr is 1 Node/iteration,speed of fast is 2 node/iteration).
 	
-	
+10. Optimal solution -Binary search on Answers
+	-Problems whose solution is bounded can be solved using binary search(answer lies in the given range of numbers).
+	Example:Find square root of a number in log n:We know that the answer lies in the range 1 to n.Hence binary searching in this range leads to answer	
 	
 	
 	
