@@ -1,4 +1,4 @@
-auth token for repo =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  (expiry date 28 sept 2025)
+
 
 1.Array two Pointer best practices
 	-use while instead of for loop
