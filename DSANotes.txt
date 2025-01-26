@@ -57,7 +57,12 @@
 10. Optimal solution -Binary search on Answers
 	-Problems whose solution is bounded can be solved using binary search(answer lies in the given range of numbers).
 	Example:Find square root of a number in log n:We know that the answer lies in the range 1 to n.Hence binary searching in this range leads to answer	
-	
+
+11. K nested loop : How to create a k loops nested within one another when k is not known at compile time.
+	-This can be solved using recursion.Example:To generate all k digit number the function should call itself 10 times within it(Each index takes 10 values from 0 to 9).
+	-Example :Generate all binary strings.In this problem each character at index can take two values '1' or '0'.So the function should call itself twice inside it.
+	-Solution: brute force-generate all possible binary string of given length and then filter it before adding it to list.
+	-Optimal oproach: directly generate only valid binary strings. 	
 	
 	
 	
