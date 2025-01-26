@@ -64,6 +64,10 @@
 	-Solution: brute force-generate all possible binary string of given length and then filter it before adding it to list.
 	-Optimal oproach: directly generate only valid binary strings. 	
 	
+12.BackTracking is used to solve two types of problem "Permutation problem" and "Combination Problem"
+	-when each index of answer takes multiple values it is Permutation problem.(requires for loop inside recursive function to iterate between all possible values).ref:https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
+	-when each index of answer takes only 2 values(element at index of source is either picked or not picked) it is Cobination problem.recursive function is called only twice within it.ref:https://takeuforward.org/data-structure/power-set-print-all-the-possible-subsequences-of-the-string/
+	
 	
 	
 	
