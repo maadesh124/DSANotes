@@ -80,7 +80,7 @@
 	-if the src is in infix form then algorithm is slightly complex.
 	
 15.Monotonic Stack-Next Greater or Smaller elements
-	-Most of the monotonic problems can be solved by finding next greater or smaller element for each index(in any one or both sides)
+	-Most(almost every) of the monotonic problems can be solved by finding next greater or smaller element for each index(in any one or both sides)
 	-If a problem involves iterating through all sections and finding answer for each section(answer for each section lies in the source), then the same problem can be solved by iterating over each element and finding the sections for which the current element is the answer.
 		Example 1:Next Greater element-VVV Important(for each element find the next greater element)
 			-General aproach:iterate through each element and find its next greater element.Time complexity O(n^2).
@@ -90,6 +90,11 @@
 		Example 2 :Sum of subarray mins(Sum of minimums of all subarrays of given array)
 			-Brute Force Approach :Iterate through all subarrays(O(n^2)) and find min for each one and add it to the sum.Time complexity -O(n^3 or n^2)
 			-Optimal Approach:Iterate through each element and find all the subarays(sections) for which current element is the minimum.This involves finding next Smaller element for each element in left as well as right hand side, computing for each element can be done while popping it using method in Example 1(This reduces space complexity).
+			
+		Example 3:Largest rectangle in histogram
+			-Brute Force:iterate through all possible rectangles and find the one with max area
+			-Optimal Oproach :All rectangles that can be formed can have heights h where h =arr[i] for some i(h is an element in arr).
+				-iterate through each element,find the area of largest rectangle that can be formed with height equivalent to current element.Area of largest rectangle with height arr[i]=arr[i]*(index of next smaller element in right side- index of next smaller element in left side-1).Now use the method in Example 1 to solve the sum.ref:https://leetcode.com/problems/largest-rectangle-in-histogram/submissions/1539197444/
 		
 
 	
