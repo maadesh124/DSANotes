@@ -82,14 +82,16 @@
 15.Monotonic Stack-Next Greater or Smaller elements
 	-Most of the monotonic problems can be solved by finding next greater or smaller element for each index(in any one or both sides)
 	-If a problem involves iterating through all sections and finding answer for each section(answer for each section lies in the source), then the same problem can be solved by iterating over each element and finding the sections for which the current element is the answer.
-		Example 1:Next Greater element(for each element find the next greater element)
+		Example 1:Next Greater element-VVV Important(for each element find the next greater element)
 			-General aproach:iterate through each element and find its next greater element.Time complexity O(n^2).
-			-Using Stack(Monotonic stack):for each element find the other elements for which the current element is next greater element.The elements for which next greater elements need to known are present in stack(arranged in descending order from bottom to top).In each iteration do the following,If the current element is greater than top of stack then current element is the NGE for top of stack,pop the top and push top and current element to map.Do this until current element is less than top of stack or stack becomes empty.Add current element to top of stack(this means NGE for current element is not known at this point of time and NGE needs to be known in upcoming iterations).At the end of traverasal stack contains some elements,those elements don't have NGE.Time complexity-Each element is visited only once and pushed to the stack only once.Hence time complexity is O(n).
+			-Using Stack(Monotonic stack):for each element find the other elements for which the current element is next greater element.The elements for which next greater elements need to known are present in stack(arranged in descending order from bottom to top).In each iteration do the following,If the current element is greater than top of stack then current element is the NGE for top of stack,pop the top and put top and current element to map(NGE for the top in right side is current element,if you want NGE on left side then after popping the element at the top of stack is left NGE ref:https://youtu.be/Dq_ObZwTY_Q?si=Dq_q66BcfJEJoglx).Do this until current element is less than top of stack or stack becomes empty.Add current element to top of stack(this means NGE for current element is not known at this point of time and NGE needs to be known in upcoming iterations).At the end of traverasal stack contains some elements,those elements don't have NGE.Time complexity-Each element is visited only once and pushed to the stack only once.Hence time complexity is O(n).Using this method you can find NGE of each element in both left and right side in single traversal using single stack.
+				Key Points:(i) Every element is pushed to the stack and popped(Few elements which dont have right NGE are not popped but can be popped using seperate for loop).
+				(ii) At the time when the element is popped ,left and right NGEs are known(This is correct point to perform operation on each element).
 		Example 2 :Sum of subarray mins(Sum of minimums of all subarrays of given array)
 			-Brute Force Approach :Iterate through all subarrays(O(n^2)) and find min for each one and add it to the sum.Time complexity -O(n^3 or n^2)
-			-Optimal Approach:Iterate through each element and find all the subarays(section) for which current element is the minimum.This involves finding next Smaller element for each element in left as well as right hand side in two seperate arrays.
-		Example 3:Sliding window maximum
-			-For each element find the section in which the current element is the maximum.This involves NGE in both left and right directions.Let m be no. of windows present in that section which includes the current element.Then current element is the answer for those m windows.(Though time and Space complexities are O(n) ,this is not the most optial solution)
+			-Optimal Approach:Iterate through each element and find all the subarays(sections) for which current element is the minimum.This involves finding next Smaller element for each element in left as well as right hand side, computing for each element can be done while popping it using method in Example 1(This reduces space complexity).
+		
+
 	
 	
 	
