@@ -5,6 +5,8 @@
 	-update(increment or decrement) only one pointer in each iteration
 	-use continue statements
 	-make sure that right pointer always leads left pointer
+	-make sure that direction of ptrs does not change(if left is moving from 0 to n-1 then the vale left should never decrease).
+	-for each optimal ptr1 find optimal ptr2,let ptr2Opt be optimal val of ptr2 for ptr1 then find a constraint that says, optimal ptr2 for ptr1+1 comes after ptr2Opt in the direction of traversal.If there is no such constraint then the poblem cant be solved in O(n).also use the data obtained in finding Optimal ptr2 for ptr1 to find optimal ptr2 for ptr1+1.
 	
 2.Array when upper and lower limits of arr[i] is known(conditions like 1<=arr[i]<=N).works only for Integers
 	-you can store 2 numbers in arr[i] one should follow above condition.
