@@ -98,6 +98,13 @@
 			-Optimal Oproach :All rectangles that can be formed can have heights h where h =arr[i] for some i(h is an element in arr).
 				-iterate through each element,find the area of largest rectangle that can be formed with height equivalent to current element.Area of largest rectangle with height arr[i]=arr[i]*(index of next smaller element in right side- index of next smaller element in left side-1).Now use the method in Example 1 to solve the sum.ref:https://leetcode.com/problems/largest-rectangle-in-histogram/submissions/1539197444/
 		
+		
+		
+16.Top k elements(Heaps)-get Top k largest elements in the array 
+	-Approach 1:Sort the array in ascending order and retrieve last k elements.
+	-Approach 2:Push all elements to the maxHeap.Then remove k elements from the heap(these elements are the required Answer).
+	-Approach 3(Using min heap):The min heap maintains k largest elements.when adding new element, if new element is greater than root (smallest among the k elements) then remove root and add new element to the heap else do nothing.If the number of elements in heap is less than k,then dont compare with root directly add it to the heap.Add all elements to the heap using the above method ,at any heap contains k largest elements so far.
+	-Approach 3(revised): The min heap maintains k largest elements.when adding new element,after adding check if(heap_size>k) if true then remove root(smallest among the k+1 elements).Add all elements to the heap using the above method ,at any heap contains k largest elements so far.
 
 	
 	
