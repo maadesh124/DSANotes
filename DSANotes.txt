@@ -104,7 +104,7 @@
 	-Approach 1:Sort the array in ascending order and retrieve last k elements.
 	-Approach 2:Push all elements to the maxHeap.Then remove k elements from the heap(these elements are the required Answer).
 	-Approach 3(Using min heap):The min heap maintains k largest elements.when adding new element, if new element is greater than root (smallest among the k elements) then remove root and add new element to the heap else do nothing.If the number of elements in heap is less than k,then dont compare with root directly add it to the heap.Add all elements to the heap using the above method ,at any heap contains k largest elements so far.
-	-Approach 3(revised): The min heap maintains k largest elements.when adding new element,after adding check if(heap_size>k) if true then remove root(smallest among the k+1 elements).Add all elements to the heap using the above method ,at any heap contains k largest elements so far.
+	-Approach 3(revised): The min heap maintains k largest elements.when adding new element,after adding check if(heap_size>k) if true then remove root(smallest among the k+1 elements).Add all elements to the heap using the above method ,at any heap contains k largest elements so far.For k smallest elements use MaxHeap.
 
 	
 	
