@@ -106,6 +106,18 @@
 	-Approach 3(Using min heap):The min heap maintains k largest elements.when adding new element, if new element is greater than root (smallest among the k elements) then remove root and add new element to the heap else do nothing.If the number of elements in heap is less than k,then dont compare with root directly add it to the heap.Add all elements to the heap using the above method ,at any heap contains k largest elements so far.
 	-Approach 3(revised): The min heap maintains k largest elements.when adding new element,after adding check if(heap_size>k) if true then remove root(smallest among the k+1 elements).Add all elements to the heap using the above method ,at any heap contains k largest elements so far.For k smallest elements use MaxHeap.
 
+17.Binary Tree Level Order Traversal
+	-Use while to iterate over levels and for to iterate in each level,ref="https://leetcode.com/problems/binary-tree-level-order-traversal/description/"
+	-Some problems require using additional queue to track a particular parameter of each node.ex:Top view of Binary Tree, this requires additional q to track column no. of each node.example 2:Maximum Width of Binary Tree ,ref="https://leetcode.com/problems/maximum-width-of-binary-tree/description/"
+	
+18.Binary Tree
+	-Begin with recursive solution,because it is easier to find recursive solution than iterative solution(not all problems).
+	-refer "https://youtu.be/wGXB9OWhPTg?si=TWjtaTzo2nk0XMx8" for Morris traversal
+	-To construct binary tree we need inorder traversal along with pre or post order
+	-In preorder traversal and inorder traversal last node visited is always right most node from root, use "while(node.right!=null)node=node.right;" this gives the right most node.
+	-In inorder and postorde fist node visited is always leftmost node ,use "while(node.left!=null)node=node.left;" this gives the leftmost node.
+	-preorder ,postorder and inorder traversal can be done using Stack refer "https://leetcode.com/problems/binary-tree-postorder-traversal/submissions/1564747616/".
+	
 	
 	
 	
