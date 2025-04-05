@@ -37,6 +37,7 @@
 	-store the observation or result obtained in each iteration in a data structure
 	-use the data in this datastructure when needed
 	reference="https://youtu.be/P8Xa2BitN3I?si=smMDNaH9n7bgnYDF"
+	-1d Tabulation reference:"https://leetcode.com/problems/house-robber/solutions/156523/from-good-to-great-how-to-approach-most-of-dp-problems/"
 	
 6.Maximum difference in O(n) 
 	-Given an Array you can find the maximum profit in O(n).
@@ -111,12 +112,19 @@
 	-Some problems require using additional queue to track a particular parameter of each node.ex:Top view of Binary Tree, this requires additional q to track column no. of each node.example 2:Maximum Width of Binary Tree ,ref="https://leetcode.com/problems/maximum-width-of-binary-tree/description/"
 	
 18.Binary Tree
-	-Begin with recursive solution,because it is easier to find recursive solution than iterative solution(not all problems).
+	-Begin with recursive solution,because it is easier to find recursive solution than iterative solution(not all problems).Use null as base case or something equivalent(don't use leaf as base case).This simplifies the approach and code is clean.
 	-refer "https://youtu.be/wGXB9OWhPTg?si=TWjtaTzo2nk0XMx8" for Morris traversal
 	-To construct binary tree we need inorder traversal along with pre or post order
 	-In preorder traversal and inorder traversal last node visited is always right most node from root, use "while(node.right!=null)node=node.right;" this gives the right most node.
 	-In inorder and postorde fist node visited is always leftmost node ,use "while(node.left!=null)node=node.left;" this gives the leftmost node.
 	-preorder ,postorder and inorder traversal can be done using Stack refer "https://leetcode.com/problems/binary-tree-postorder-traversal/submissions/1564747616/".
+	
+19.Graphs -Single Source shortest path in unweighted undirected graph
+	-To find shortest distance of all nodes from single source ,At each iteration visit all the nodes at distance k from the source,How to find all nodes at distancr k? unvisited Neighbours of all nodes at distance k-1 will be at a distance of k from source.Initially only source node is at distance 0, use queue and do bfs to find all unvisited neighbours.
+	-Multisource bfs:Some problems require to find the shortest distance from multiple sources example:rotting oranges leetcode.This problem is same as single source problem only difference is This problem has multiple nodes at distance 0(multi source) .Push all of them to the Queue initially and do normal bfs.
+	
+
+	
 	
 	
 	
