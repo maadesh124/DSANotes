@@ -1,0 +1,38 @@
+For each edge u,v in graph dfs visits v before it visits u, ref mitocw.
+Dfs does not work for cyclic graph it needs some alteration ,A graph is cyclic if it has backward edge.
+Undirected graph without cycles is tree.not true for DAG
+For graph algos E dominates over V and VlogV
+Because E is of the order V^2.
+shortest and longest path algo Using dfs in dag
+Dijkstra algo: whenever a new shorter path is found to a node then relax all the outgoing edges of the node, repeat this recursively.
+Initially shortest path to src is 0, start from here. This wirks but each edge is relaxed more than once.
+
+1Relax all the outgoing edges of a node after the shortest path to that node is found.
+
+Dijkstra-In each iteration you extract a node from heap,the shortest path to the extracted node is its current path
+
+In dijkstra's algorithm nodes are visited in ascending order of their distance from source
+
+If a b c d e is shortest path from a to e then shortest path between any two nodes in this path lies in this path itself 
+
+
+E.g shortest path from b to d is b c d
+
+When y6ou have dag topologically sorr it
+
+If P is a shortest path beteween any two nodes then no. Of edges in P is less than equal to V-1 where V is no. Of nodes
+Bellman ford: at each iteration all edges are relaxed,at ith iteration all the nodes at distance(path length ) i-1 from from src are saturated(d(v)==del(v)).The maximum distance a node could have is V-1.
+d(v) of any node v decresaases in each iteration.
+
+Recursion works only on DAGs.i.e it works only when the subprolem can be topilogiologically sorted.
+
+
+2 types Of subproblem in dp:
+1. Operate on each index for a recursive call(Similar to pick and not pick in backtracking ,here the operations would be anything according to problem)
+2.Iterate through all values and find the one which best fits(Similar to permutation problem in backyratracking i.e iterate theough all posible values in each recursive call)
+
+
+For few dp problems the relation would be dp[i]=sum(dp[j] , i+1<=j<=k) .This problem requires n^2 time. for each index it takes O(n) time, using prefix sum for this type of problem solves it in linear time
+
+Other problems like dp[i]=max(known constant,some_func(j) for i+1<j<n) can also be solved in linear time tracking max of some_fun(j) while visiting each index
+Example stock buy and sell 2, Stock buy and sell with cooldown 
