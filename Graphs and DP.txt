@@ -24,6 +24,9 @@ If P is a shortest path beteween any two nodes then no. Of edges in P is less th
 Bellman ford: at each iteration all edges are relaxed,at ith iteration all the nodes at distance(path length ) i-1 from from src are saturated(d(v)==del(v)).The maximum distance a node could have is V-1.
 d(v) of any node v decresaases in each iteration.
 
+A undirected graph without cycle is Tree,Tree contains n nodes connected by exactly n-1 edges.Adding any additional edges forms cycle
+For cycle detection related problem store the visitTime instead of boolean isVisited
+
 Recursion works only on DAGs.i.e it works only when the subprolem can be topilogiologically sorted.
 
 
