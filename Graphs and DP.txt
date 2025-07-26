@@ -1,3 +1,4 @@
+********Graph**********
 For each edge u,v in graph dfs visits v before it visits u, ref mitocw.
 Dfs does not work for cyclic graph it needs some alteration ,A graph is cyclic if it has backward edge.
 Undirected graph without cycles is tree.not true for DAG
@@ -18,7 +19,7 @@ If a b c d e is shortest path from a to e then shortest path between any two nod
 
 E.g shortest path from b to d is b c d
 
-When y6ou have dag topologically sorr it
+When you have dag topologically sort it
 
 If P is a shortest path beteween any two nodes then no. Of edges in P is less than equal to V-1 where V is no. Of nodes
 Bellman ford: at each iteration all edges are relaxed,at ith iteration all the nodes at distance(path length ) i-1 from from src are saturated(d(v)==del(v)).The maximum distance a node could have is V-1.
@@ -26,7 +27,11 @@ d(v) of any node v decresaases in each iteration.
 
 A undirected graph without cycle is Tree,Tree contains n nodes connected by exactly n-1 edges.Adding any additional edges forms cycle
 For cycle detection related problem store the visitTime instead of boolean isVisited
+In a tree every pair of vertices have only one path and that's unique.Every node has atmost 2 neightbours and hierachical tree can be formet by making any tree as root
 
+
+
+***********DP***********
 Recursion works only on DAGs.i.e it works only when the subprolem can be topilogiologically sorted.
 
 
