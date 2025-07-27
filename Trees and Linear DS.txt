@@ -133,6 +133,11 @@
 21. Given two arrays srcs[] and targets[] we have to assign each source a target -General Approach to Assignment problem
 	-Sort the srcs and targets.Iterate through srcs for each src add all possible targets it can be assigned to heap ,then remove all the the targets which can never the target of upcoming srcs,the heap must now contain the optimum target assign it to current src.
 	-Examples :Assign cookies problem-https://leetcode.com/problems/assign-cookies/solutions/7009580/a-general-approach-to-assignment-problem-doj6
+	
+22.Check if the substring window of src string contains all characters of target
+	-calculate target frequency array,use a variable count to keep track of no. of charachters in the window which satisfies freq_src[char]>=freq_target[char] .When the size of the window increases freq_src increases so check if the condition (freq_src[char]==freq_target[char]) is satisfied(meaning a new character has occured freq_target[newchar] times) if yes increment counter.When size of window decreases frequencies check the condition (freq_src[char]==freq_target[char]-1) if yes decrement counter(meaning a character that appeared freq_target times now has reduced ).
+	-count always stores the no. of characters in the window that crossed freq_target upwards - no. of characters crosed freq_target downwards.
+	-reference:https://leetcode.com/problems/minimum-window-substring/submissions/1713168311/
 
 	
 	
