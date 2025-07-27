@@ -125,10 +125,14 @@
 	-To find shortest distance of all nodes from single source ,At each iteration visit all the nodes at distance k from the source,How to find all nodes at distancr k? unvisited Neighbours of all nodes at distance k-1 will be at a distance of k from source.Initially only source node is at distance 0, use queue and do bfs to find all unvisited neighbours.
 	-Multisource bfs:Some problems require to find the shortest distance from multiple sources example:rotting oranges leetcode.This problem is same as single source problem only difference is This problem has multiple nodes at distance 0(multi source) .Push all of them to the Queue initially and do normal bfs.
 	
-20. Most of the interval problems require sorting or priorityQueue or both
+20. Most of the interval problems require sorting or priorityQueue or both-General approach to Overlapping intervals
 	-To find total overlaps at every time in [min(start),max(end)],push all the the start and end times to heap along with its label weather it's a start or end time.use variable last to track last processed time ,variable time to track current time,count to track total overlaps.While heap is not empty pop all the start and end times that have same time(first pop one element then pop root if it is equal to first popped element).for time t=[last+1,time] there are count overlaps and at time t=[time,time] there are 'count + total starts' overlaps
 	-reference:https://leetcode.com/problems/merge-intervals/solutions/7005572/general-approach-to-interval-problems-by-keq8
 	-reference:https://www.geeksforgeeks.org/problems/intersecting-intervals/1 (username: maadesha6jbb gfg account)
+
+21. Given two arrays srcs[] and targets[] we have to assign each source a target -General Approach to Assignment problem
+	-Sort the srcs and targets.Iterate through srcs for each src add all possible targets it can be assigned to heap ,then remove all the the targets which can never the target of upcoming srcs,the heap must now contain the optimum target assign it to current src.
+	-Examples :Assign cookies problem-https://leetcode.com/problems/assign-cookies/solutions/7009580/a-general-approach-to-assignment-problem-doj6
 
 	
 	
