@@ -138,6 +138,15 @@
 	-calculate target frequency array,use a variable count to keep track of no. of charachters in the window which satisfies freq_src[char]>=freq_target[char] .When the size of the window increases freq_src increases so check if the condition (freq_src[char]==freq_target[char]) is satisfied(meaning a new character has occured freq_target[newchar] times) if yes increment counter.When size of window decreases frequencies check the condition (freq_src[char]==freq_target[char]-1) if yes decrement counter(meaning a character that appeared freq_target times now has reduced ).
 	-count always stores the no. of characters in the window that crossed freq_target upwards - no. of characters crosed freq_target downwards.
 	-reference:https://leetcode.com/problems/minimum-window-substring/submissions/1713168311/
+	
+23. Third type Dp
+	-At each index find what are the new targets it could make and update all the target.Example subset sum equals target(finite src):
+	if src[0:i-1] could make a target T,then arc[0:i] could make a target T+src[i].
+	-Another example:no. of ways to make T+src[i]  using src[0:i]=No. of ways make T+src[i] using src[0:i-1](already existing) + No. of ways to make T using src[0:i-1] (It looks like 0/1 knapsack problem but when the src is inifinite it is different from knapsack problem)
+	-https://leetcode.com/problems/coin-change-ii/solutions/7014306/third-type-dp-by-maadesh_a-zt2r(src is infinite).
+	-https://leetcode.com/problems/partition-equal-subset-sum/submissions/1714165214(When src is finite)
+	
+	
 
 	
 	
