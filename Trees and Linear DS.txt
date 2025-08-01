@@ -20,6 +20,12 @@
 	-a^b^c^d=d^c^a^b can be calculated in any oreder (associative property)
 	-a^a=0 ,0^a=a^0=a.
 	
+	-bitwise OR increases monotonically when add additional elements
+	-bitwise AND decreaases monotonically when you add additional elements =>(a1 & a2)<=a1, (a1 & a2)<=a2; 
+	-bitwise AND of all elements of the given array <= min of all the elements
+	-bitwise OR of all elements of the given array >= max of all elements
+	
+	
 	
 	
 4.When you need a data structure with O(1) insertion, deletion and O(1) search operation use HashMap.
