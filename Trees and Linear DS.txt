@@ -24,6 +24,7 @@
 	-bitwise AND decreaases monotonically when you add additional elements =>(a1 & a2)<=a1, (a1 & a2)<=a2; 
 	-bitwise AND of all elements of the given array <= min of all the elements
 	-bitwise OR of all elements of the given array >= max of all elements
+	-To minimize AND value use all possible elements.To maximize OR value use all possible elements.
 	
 	
 	
